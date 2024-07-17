@@ -1,0 +1,120 @@
+#index.html is considered the homepage by defauly, specify otherwise
+#'!', and emmet abbreviation gives you boilerplate code (foundation code)
+#which is what's given below 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body></body>
+</html>
+
+#HTML is tags making up content and elements (opening<> and closing tags</>)
+
+""" structure of basic html page
+<!DOCTYPE html>                 tells browser you're using html
+<html>                  root of a html document (parent of head and body)
+ <head>                 container for metadata (for which there isn't a closing tag)
+  <title>                  this opening tag has closing tag like "almost always" 
+     This information isn't shown on page
+  </title>
+ </head>
+ <body>                 contains data rendered by browser
+   <p>
+     This contains information that's visible on page
+     <br>
+     <a href="/hello.html"> go to hello</a>     #anchor tag
+   </p>
+ </body>
+</html>
+"""
+
+#https://developer.mozilla.org to explore further about shit
+
+#some tags have no content in beteween like <br> (nextline)
+
+#we can do real prayogalu with html on actual web pages
+
+#<!--this is a html comment-->
+
+#bro isn't case sensitive wrt the code lmao
+
+<!--now on we'll use the comments section professionally 
+
+    HTML attributes(add more info to the tag (name=value))
+
+    heading tags (<h1> to <h6>), use according to importance not size
+
+    paragraph tag <p>
+
+    anchor tag (used to add links to page) <a href='link'> toggle shown </a>
+    anchor tag <a href='link' target="_main"> toggle shown </a> opens link in new tab
+    absolute and relative links(in same folder or in different folders)
+
+    image tag <img src="absolute/relative url" alt="alternative name for that image" height/width="">
+    image tags don't have closing tags, it's a self closing tag
+
+    this one generates clickable image <a href='link'> (image tag and spesc here) </a> alt, dimenisons addable
+
+    <b>bold<b/> <i>italic<i/> <u>underline<u/>
+    <big> tag shows big text<b/> <small>similarly<small/>
+
+    <hr> horizontal ruler used to separate content using a line
+
+    <sub>subscript<sub/> <sup>superscript<sup/>
+    <pre> to leave all the manual spaces in <pre/> (otherwise it counts all those spaces as one)-->
+
+<!--page layout techniques
+
+    using the right semantic tags <header>, <main> (used to increase readibility of code and helps w search engine optimization), 
+    <footer> inside <body> w their own customizations
+
+    <section>, <article>, <aside> inside main tag
+
+    <div> - non semantic tag used to contain other tags output doesn't vary due to this tag (used shitloads)
+    list of div tags: address, aside, article, blockquote, canvas, dd, div, dl, dt, fieldset, figcaption,
+    footer, figure, form, h1-h6, header, hr, li, main, nav, noscript, ol, p, pre, section, table, tfoot, 
+    ul, video
+    
+    <span> is also like div, except it's an inline element (takes width on page as per requirement)
+    div tends to occupy the whole width on page
+    lise of span tags: a, abbr, acronym, b, bdo, big, br, cite, button, code, dfn, em, i, img, input, kbd, 
+    label, map, object, tt, var, output, q, samp, script, select, small, span, strong, sub, sup, textarea, 
+    time-->
+
+<!--lists, forms, tables
+
+  unordered list: <ul> <li> items n shi </li> </ul> (nested list possible like loops n shi, malli <ul>...)
+  ordered list: <ol> <li> items n shi </li> </ol>
+
+  <tr> table row, <td> table data, <th> table header
+  <table> <caption> <tr> <th> ... <th> enclosing headings, <tbody> enclosing data body (no visible changes)
+  <th colspan="number of columns for which the header applies">
+
+<form action="/action.php">
+  <input type="text/password" placeholder="enter name">                 (shit's self closing)
+  <label for="101">
+    <input type='radio' value='class XI' name="class" id="101"> class XI
+  </label>    (label makes the text also clickable)
+  <label for="math">
+    <input type='checkbox' value='math' name="subject" id="101"> Math
+  </label>    (differentiate label and checkbox carefully)
+  <textarea name="feedback" id="101" placeholder="please give feedback :)"> Feedback </textarea>
+</form>
+  <select name="city" id="city">
+    <option value="delhi"> Delhi 
+  </select>     (a couple more options)
+
+  <input type="submit" value='submit'>. . . this enables execution of backend ka action.php
+
+  <iframe src="link">  (website inside website)
+  <video src="relative/video link" controls loop/autoplay. . .> My video </video>
+   attributes- controls, height, width, loop, autoplay
+  <div id='id1' class='class1'>
+  </div>-->
+
+  *nested elements area always to be places indented by 2 steps for readability
+  <section> separates content (no visible changes) </section>
